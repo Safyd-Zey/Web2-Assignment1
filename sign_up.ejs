@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    
+</head>
+<body>
+    <style>
+        body {
+            background-image: url(images/for_login_register.jpg);
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        .container {
+            margin-top: 136px;
+            display: flex;
+            margin-left: 130px;
+        }
+        .box {
+            background-color: white;
+            height: 610px;
+            width: 530px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0px 1px 8px rgba(255, 255, 255, 0.8);
+        }
+        h1 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: #D6151D;
+            font-size: 36px;
+            margin: 40px;
+            margin-top: 70px;
+        }
+        
+        .formInput {
+            display: block;
+            margin: 0px 0px 24px 20px;
+            padding: 7px;
+            width: 70%;
+            box-sizing: border-box;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid #D6151D;
+            font-size: 20px;
+            margin-left: 80px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: #D6151D;
+        }
+        .formInput::placeholder {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: #d6151b72;
+        }
+        .button {
+            color: white;
+            background: #D6151D;
+            border-radius: 6px;
+            width: 120px;
+            height: 40px;
+            border: none;
+            margin: 16px;
+            font-size: 18px;
+            cursor: pointer;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin-bottom: 26px;
+        }
+        a {
+            color: #d6151b72;
+        }
+        a:hover {
+            color: #D6151D;
+        }
+    </style>
+    <div class="container">
+        <div class="box">
+    <h2>Registration</h2>
+    <form id="myForm" method="post">
+        <div>
+            <input type="email" id="email" name="email" class="formInput" placeholder="Email" required>
+            </div>
+            <div>
+            <input type="password" id="password" name="password" class="formInput" placeholder="Password" required>
+            </div>
+            <div>
+             <input type="submit" id="submit" value="Submit" class="button">
+            </div>
+        
+    </form>
+    <br>
+    <p>  <%= mes %>  </p>
+    <br>
+    <button id="reg" class="button">Sign in</button>
+        </div></div>
+    <script>
+        // JavaScript для обработки события клика на кнопке
+        document.getElementById('reg').addEventListener('click', function() {
+            // Перенаправление на другую страницу
+            window.location.href = '/123';
+        });
+    </script>
+</body>
+</html>
